@@ -1,7 +1,6 @@
 version 0.2
 
 phases:
-  #CI
   install:
     runtime-versions:
       python: 3.12
@@ -17,7 +16,6 @@ phases:
     - cd ..
     - zip -g deployment_package.zip lambda_function.py
 
-  #CD
   post_build:
     commands:
       - echo "Updating Lambda Function..."

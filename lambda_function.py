@@ -18,7 +18,7 @@ def health_data():
         "ftp": 250,                 # Functional Threshold Power en watts 
         "saturación": 98,           # Porcentaje de saturación de oxígeno
         "velocidad": 5.5,           # km/h
-        "distancia recorrida": 10,2 # Km
+        "distancia recorrida": 10.2 # Km
     }
 
 def lambda_handler(event, context):

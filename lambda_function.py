@@ -6,15 +6,15 @@ from flask import {
 
 app = Flask(__name__)
 
-@app.router('/')
+@app.route('/')
 def intex():
     return jsonify(status=200, message='OK')
 
-@app.router('/monitor')
+@app.route('/monitor')
 def monitor():
     return jsonify(status= 200, message= 'Echo: I\'m good')
 
-@app.router('/health')
+@app.route('/health')
 def health_data():
     health_metrics = {
         "frecuencia cardíaca": 72,  # bpm 

@@ -24,5 +24,3 @@ def health_data():
 def lambda_handler(event, context):
     return awsgi.response(app, event, context, base64_content_types={"image/png"})
 
-if __name__ == "__lambda_function__":
-    app.run()

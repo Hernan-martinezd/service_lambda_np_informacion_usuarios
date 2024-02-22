@@ -20,6 +20,7 @@ def health_data():
         "velocidad": 5.5,           # km/h
         "distancia recorrida": 10.2 # Km
     }
+    return jsonify(status= 200, message= health_metrics)
 
 def lambda_handler(event, context):
     return awsgi.response(app, event, context, base64_content_types={"image/png"})
